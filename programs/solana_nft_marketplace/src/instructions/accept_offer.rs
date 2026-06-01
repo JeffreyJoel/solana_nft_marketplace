@@ -69,7 +69,7 @@ pub struct AcceptOfferAccounts<'info> {
 
     #[account(
         seeds = [b"reward_mint", maketplace.key().as_ref()],
-        bump = maketplace.treasury_bump,
+        bump = maketplace.reward_bump,
         mint::decimals = 6,
         mint::authority = maketplace
     )]

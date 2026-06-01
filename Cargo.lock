@@ -2549,6 +2549,7 @@ version = "2.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f1384b52c435a750cc9c538760fc7bb472fd78e65a9900a2d07312c5bb335b72"
 dependencies = [
+ "borsh 1.6.1",
  "bytemuck",
  "bytemuck_derive",
  "curve25519-dalek",
@@ -2562,6 +2563,7 @@ dependencies = [
  "solana-program-error 3.0.1",
  "solana-sanitize 3.0.1",
  "solana-sha256-hasher 3.1.0",
+ "wincode",
 ]
 
 [[package]]
@@ -4694,8 +4696,10 @@ dependencies = [
  "anchor-spl",
  "litesvm",
  "mpl-core",
+ "solana-instruction 3.4.0",
  "solana-keypair",
  "solana-message 3.1.0",
+ "solana-pubkey 3.0.0",
  "solana-signer 3.0.0",
  "solana-transaction",
 ]
